@@ -9,7 +9,6 @@ const SmallestMultiple = (array) => {
   let lcm = array[0];
   array.forEach(item => {
     lcm = (lcm * item) / gcd(lcm, item);
-    console.log(lcm);
   })
   return lcm;
 }
